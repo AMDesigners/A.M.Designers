@@ -700,9 +700,9 @@ footer .fab:hover {
 
 
 @media (max-width : 768px) {
-    .services, .projects, .about-us, .contact-us{
+/*     .services, .projects, .about-us, .contact-us{
         height: 100%;
-    }
+    } */
     .services .row {
         margin: 0.5rem 7rem;
         flex-direction: column;
