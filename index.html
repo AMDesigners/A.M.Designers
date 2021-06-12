@@ -265,7 +265,12 @@
         function showMenu() {
             nl.style.height = "100vh";
         }
-
+        
+        let body = document.querySelector('body');
+        document.readyState(function() {
+            var wheight = window.innerHeight;
+            body.style.height = wheight;
+        })
     </script>
 </body>
 
