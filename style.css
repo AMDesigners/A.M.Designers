@@ -883,7 +883,7 @@ footer .fab:hover {
 @media (max-height: 300px) {
     #navLinks ul{
         display: flex;
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
     #navLinks .fas {
         font-size: 1rem;
