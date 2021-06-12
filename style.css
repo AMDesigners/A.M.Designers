@@ -11,6 +11,9 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
 }
+.container {
+    display: none;
+}
 section {
     scroll-snap-align: start;
     width: 100%;
@@ -18,7 +21,6 @@ section {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    display: none;
 }
 .services, .projects, .about-us, .contact-us {
     margin: auto;
