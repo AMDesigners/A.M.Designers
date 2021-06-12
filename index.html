@@ -55,16 +55,18 @@
                     <li><a onclick="hideMenu()" href="#about">About US</a></li><br>
                     <li><a onclick="hideMenu()" href="#contact">Contact US</a></li>
                 </ul>
-                <div class="icons">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100069091613149"><i
-                            class="fab fa-facebook"></i></a>
-                    <a target="_blank" href="https://twitter.com/AMDesigners2"><i class="fab fa-twitter"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/amdesigners512/"><i
-                            class="fab fa-instagram"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/a-m-designers-56135b214/"><i
-                            class="fab fa-linkedin"></i></a>
+                <div class="ip">
+                    <div class="icons">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100069091613149"><i
+                                class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/AMDesigners2"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/amdesigners512/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/a-m-designers-56135b214/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p><i class="far fa-copyright"></i> Made With <i class="far fa-heart"></i> by AMD Designers</p>
                 </div>
-                <p><i class="far fa-copyright"></i> Made With <i class="far fa-heart"></i> by AMD Designers</p>
             </div>
         </section>
 
@@ -268,10 +270,10 @@
         })
 
         let pl = document.getElementById("main");
-        let con = document.querySelector(".container");
+        let sec = document.querySelector(".container");
         function func() {
             pl.style.display = 'none';
-            con.style.display = "block";
+            sec.style.display = "block";
         }
         let nl = document.getElementById("navLinks");
         function hideMenu() {
