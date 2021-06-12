@@ -11,9 +11,6 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
 }
-.container {
-    display: none;
-}
 section {
     scroll-snap-align: start;
     width: 100%;
@@ -199,8 +196,10 @@ nav .fa {
     bottom: 0;
     transition: 0.5s;
     overflow: hidden;
-    opacity: 0.9;
     z-index: 999;
+}
+#navLinks ul{
+    margin-top: 4rem;
 }
 #navLinks ul li {
     text-align: center;
@@ -698,11 +697,44 @@ footer .fab:hover {
     .contact-col textarea {
         padding: 10px;   
     }
+    .ip {
+        display: none;
+    }
+    .text-box{
+        margin-top: 9.5rem;
+    }
+    html {
+        scroll-snap-type: none;
+    }
+    section {
+        height: 100%;
+        padding-bottom: 50px;
+        scroll-snap-align: none;
+    }
+    .text-box h1{
+        margin-top: 3rem;
+    }
+    .text-box p {
+        margin-top: 2rem;
+    }
+    .text-box .hero-btn {
+        margin-top: 2rem;
+    }
+    #navLinks ul li a{
+        font-size: 1rem;
+    }
+    #navLinks ul li {
+        margin-top: 1rem;
+    }
+    #navLinks .fas {
+        top: 10%;
+    }
 }
 
 
 
 @media (max-width : 768px) {
+    
     .services .row {
         margin: 0.5rem 7rem;
         flex-direction: column;
@@ -723,17 +755,6 @@ footer .fab:hover {
     .contact-col div .fas {
         font-size: 2rem;
     }
-    html {
-        scroll-snap-type: none;
-    }
-    section {
-        height: 100%;
-        padding-bottom: 50px;
-        scroll-snap-align: none;
-    }
-    .header h1{
-        margin-top: 6rem;
-    }
     
 }
 
@@ -744,9 +765,6 @@ footer .fab:hover {
     .contact-col .hero-btn {
         padding: 1rem 3rem;
     }
-}
-
-@media (max-width: 700px) {
     .ne {
         display: flex;
         flex-direction: row;
@@ -788,6 +806,7 @@ footer .fab:hover {
     .contact-col div p {
         font-size: 10px;
     }
+    
 }
 
 @media (max-width: 600px) {
@@ -799,11 +818,8 @@ footer .fab:hover {
     }
 }
 
+
 @media (max-width: 400px) {
-    .center {
-        width: 7rem;
-        height: 7rem;
-    }
     .services .row{
         margin: 1rem 2rem;
     }
@@ -857,41 +873,5 @@ footer .fab:hover {
     .contact-us .hero-btn {
         padding: 10px 16px;
         margin-top: 0.2rem;
-    }
-}
-
-
-@media (max-height: 500px) {
-    #navLinks ul li{
-        margin-top: 2rem;
-    }
-    #navLinks ul li a{
-        font-size: 1.2rem;
-    }
-    #navLinks .fab {
-        margin-top: 2rem;
-    }
-}
-@media (max-height: 420px) {
-    #navLinks ul li{
-        margin-top: 1rem;
-    }
-    #navLinks ul li a{
-        font-size: 1rem;
-    }
-    #navLinks .fab {
-        margin-top: 1rem;
-    }
-}
-
-@media (max-height: 300px) {
-    #navLinks {
-        margin-top: 3rem;
-    }
-    #navLinks ul{
-        display: flex;
-    }
-    #navLinks .fas {
-        font-size: 1rem;
     }
 }
