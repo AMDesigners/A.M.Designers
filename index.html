@@ -266,10 +266,10 @@
             nl.style.height = "100vh";
         }
         
-        let body = document.querySelector('body');
+        let html = document.querySelector('html');
         document.readyState(function() {
-            var wheight = window.innerHeight;
-            body.style.height = wheight;
+            var wheight = window.outerHeight;
+            html.style.height = wheight;
         })
     </script>
 </body>
