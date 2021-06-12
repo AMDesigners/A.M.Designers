@@ -136,7 +136,6 @@ h3 {
 
 .header {
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/homebg.jpeg);
-    position: relative;
 }
 nav {
     width: 100%;
@@ -202,7 +201,7 @@ nav .fa {
 }
 #navLinks ul li {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 #navLinks ul li a{
     font-size: 1.5rem;
@@ -218,13 +217,15 @@ nav .fa {
     color: tomato;
 }
 
-
+.tb {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .text-box {
     width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
 }
 .text-box h1 {
@@ -262,7 +263,7 @@ nav .fa {
 
 .icons .fab {
     color: black;
-    margin: 7rem 1rem 1rem 1rem;
+    margin: 4rem 1rem 1rem 1rem;
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 50%;
@@ -699,6 +700,9 @@ footer .fab:hover {
 
 
 @media (max-width : 768px) {
+    .services, .projects, .about-us, .contact-us{
+        height: 100%;
+    }
     .services .row {
         margin: 0.5rem 7rem;
         flex-direction: column;
@@ -719,7 +723,18 @@ footer .fab:hover {
     .contact-col div .fas {
         font-size: 2rem;
     }
-
+    html {
+        scroll-snap-type: none;
+    }
+    section {
+        height: 100%;
+        padding-bottom: 50px;
+        scroll-snap-align: none;
+    }
+    .header h1{
+        margin-top: 6rem;
+    }
+    
 }
 
 @media (max-width: 750px) {
@@ -841,3 +856,36 @@ footer .fab:hover {
     }
 }
 
+
+@media (max-height: 500px) {
+    #navLinks ul li{
+        margin-top: 2rem;
+    }
+    #navLinks ul li a{
+        font-size: 1.2rem;
+    }
+    #navLinks .fab {
+        margin-top: 2rem;
+    }
+}
+@media (max-height: 420px) {
+    #navLinks ul li{
+        margin-top: 1rem;
+    }
+    #navLinks ul li a{
+        font-size: 1rem;
+    }
+    #navLinks .fab {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-height: 300px) {
+    #navLinks ul{
+        display: flex;
+        margin-top: 1rem;
+    }
+    #navLinks .fas {
+        font-size: 1rem;
+    }
+}
