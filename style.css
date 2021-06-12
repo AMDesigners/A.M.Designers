@@ -18,6 +18,7 @@ section {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    display: none;
 }
 .services, .projects, .about-us, .contact-us {
     margin: auto;
@@ -700,9 +701,6 @@ footer .fab:hover {
 
 
 @media (max-width : 768px) {
-/*     .services, .projects, .about-us, .contact-us{
-        height: 100%;
-    } */
     .services .row {
         margin: 0.5rem 7rem;
         flex-direction: column;
@@ -727,7 +725,7 @@ footer .fab:hover {
         scroll-snap-type: none;
     }
     section {
-        height: 100%;
+/*         height: 100%; */
         padding-bottom: 50px;
         scroll-snap-align: none;
     }
@@ -800,6 +798,10 @@ footer .fab:hover {
 }
 
 @media (max-width: 400px) {
+    .center {
+        width: 7rem;
+        height: 7rem;
+    }
     .services .row{
         margin: 1rem 2rem;
     }
